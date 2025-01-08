@@ -21,7 +21,6 @@ function templateModel() {
 
 function renderCatalog() {
   const catalogRender = document.createElement("div")
-  catalog.appendChild(catalogRender)
   jobs.forEach((job) => {
     catalogRender.innerHTML = `
         <div id="productCatalog">
@@ -35,5 +34,7 @@ function renderCatalog() {
         <div id="imgCatalog"></div>
         </div>
             `;
+  catalog.appendChild(catalogRender)
+
   });
 }
