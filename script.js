@@ -20,8 +20,8 @@ function templateModel() {
 }
 
 function renderCatalog() {
-  const catalogRender = document.createElement("div")
   jobs.forEach((job) => {
+    const catalogRender = document.createElement("div")
     catalogRender.innerHTML = `
         <div id="productCatalog">
         <div id="infoProduct">
