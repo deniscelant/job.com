@@ -14,14 +14,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 function templateModel() {
-    Array.from(tm_tittle).forEach((e) => {
-      e.textContent = "Tudo bem?";
-    });
+  Array.from(tm_tittle).forEach((e) => {
+    e.textContent = "Tudo bem?";
+  });
 }
 
 function renderCatalog() {
   jobs.forEach((job) => {
     const catalogRender = document.createElement("div")
+    catalog.appendChild(catalogRender)
+
     catalogRender.innerHTML = `
         <div id="productCatalog">
         <div id="infoProduct">
@@ -34,7 +36,6 @@ function renderCatalog() {
         <div id="imgCatalog"></div>
         </div>
             `;
-  catalog.appendChild(catalogRender)
 
   });
 }
