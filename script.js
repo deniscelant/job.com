@@ -10,7 +10,6 @@ const tm_image = document.getElementsByClassName("tm_image")
 
 window.addEventListener("DOMContentLoaded", () => {
   renderCatalog();
-  // pickJob();
 });
 
 
